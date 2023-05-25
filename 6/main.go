@@ -14,8 +14,8 @@ func main() {
 	// 初始化Redis连接
 	rdb = redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
-		Password: "", // 如果有密码，填写密码
-		DB:       0,  // 选择默认数据库
+		Password: "",
+		DB:       0,
 	})
 
 	// 测试Redis连接
